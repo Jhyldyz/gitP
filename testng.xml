@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/zhyldyzzheenbaeva/Desktop/project.html/SummerSDET">
+        <classes>
+            <class name="com.digital.MainUtils">
+                <methods>
+                    <include name="test1"/>
+                    <include name="testToAlert"/>
+                    <include name="test10"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                </methods>
+            </class>
+            <class name="Demo.ActionsDemo">
+                <methods>
+                    <include name="demo123"/>
+                </methods>
+            </class>
+            <class name="Demo.BasicLocators">
+                <methods>
+                    <include name="byIdTest"/>
+                    <include name="byTag"/>
+                    <include name="byClassName"/>
+                    <include name="byLinkedText"/>
+                    <include name="partial"/>
+                    <include name="byName"/>
+                </methods>
+            </class>
+            <class name="Demo.BrowerWindows">
+                <methods>
+                    <include name="windowsTest"/>
+                    <include name="windowButton"/>
+                    <include name="windowTest"/>
+                </methods>
+            </class>
+            <class name="Demo.CssDemo">
+                <methods>
+                    <include name="cssDemo1"/>
+                </methods>
+            </class>
+            <class name="Demo.DinamicProportis">
+                <methods>
+                    <include name="clickclik"/>
+                    <include name="visibleA"/>
+                </methods>
+            </class>
+            <class name="Demo.HomeWork.CheckBox">
+                <methods>
+                    <include name="checkTest"/>
+                </methods>
+            </class>
+            <class name="Demo.HomeWork.HomeWork">
+                <methods>
+                    <include name="testClick"/>
+                </methods>
+            </class>
+            <class name="Demo.HomeWork.HomeWork2">
+                <methods>
+                    <include name="testClick"/>
+                </methods>
+            </class>
+            <class name="Demo.HomeWork.HomeWorkMenu">
+                <methods>
+                    <include name="mainItem"/>
+                </methods>
+            </class>
+            <class name="Demo.HomeWork.PracticeForm">
+                <methods>
+                    <include name="practiceForm"/>
+                </methods>
+            </class>
+            <class name="Demo.HomeWork.RadioButton">
+                <methods>
+                    <include name="chekRadioButton"/>
+                </methods>
+            </class>
+            <class name="Demo.HomeWork.SelectMenu">
+                <methods>
+                    <include name="selectMenuDemoqa"/>
+                    <include name="selectRandomColor"/>
+                    <include name="multoselect"/>
+                </methods>
+            </class>
+            <class name="Demo.JS">
+                <methods>
+                    <include name="demo1"/>
+                </methods>
+            </class>
+            <class name="Demo.MoveToElementDemo">
+                <methods>
+                    <include name="demo12"/>
+                </methods>
+            </class>
+            <class name="Demo.NambaFood">
+                <methods>
+                    <include name="orderFood"/>
+                </methods>
+            </class>
+            <class name="Demo.NavigationAndDropdowns">
+                <methods>
+                    <include name="demo2"/>
+                    <include name="selectRandomColor"/>
+                </methods>
+            </class>
+            <class name="Demo.TextBox">
+                <methods>
+                    <include name="fillUpYheFormTest"/>
+                </methods>
+            </class>
+            <class name="Demo.TextBox2">
+                <methods>
+                    <include name="fillUpThePracticeForm"/>
+                </methods>
+            </class>
+            <class name="Demo.XPathDemo">
+                <methods>
+                    <include name="absolutXpath"/>
+                    <include name="relativeXpath"/>
+                    <include name="searchPhone"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
