@@ -1,2 +1,3 @@
-public class VisaElectron(){
+package com.digital.payment;
+public class VisaElectron{
 }

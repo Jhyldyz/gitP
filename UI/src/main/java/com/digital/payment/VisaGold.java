@@ -1,4 +1,5 @@
 package com.digital.payment;
 
-public class VisaGold {
+public class VisaGold{
+
 }
