@@ -12,9 +12,11 @@ public class WebTablesTest extends BaseTest {
         driver.get("https://demoqa.com/webtables");
         Student student = fakeDataProvider.createFakeStudentForWebtables();
         webTablesPage.addBtnClick();
-        webTablesPage.fillAppTheForm(student);
-        webTablesPage.testForm();
+        webTablesPage.fillAppTheForm(student)
+                .getInfoFromActualList();
+        //webTablesPage.testForm();
         Thread.sleep(7000);
+
 
     }
 

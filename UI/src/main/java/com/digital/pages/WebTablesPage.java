@@ -4,6 +4,10 @@ import com.digital.models.Student;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class WebTablesPage extends BasePage {
     WebTablesPage webTablesPage;
@@ -29,6 +33,9 @@ public class WebTablesPage extends BasePage {
     public WebElement redactorBtn;
     @FindBy(xpath = "//input[@id='firstName']")
     public WebElement resultFirstName;
+
+    @FindBy (xpath = "(//div[@class='rt-tr -even'])[2]")
+    public List <WebElement> actualResult;
 
 
     public WebTablesPage addBtnClick() {
@@ -72,15 +79,36 @@ public class WebTablesPage extends BasePage {
     }
 
     public WebTablesPage fillAppTheForm(Student student) {
+        listOfStudent= new ArrayList<>();
         fillAppFirstName(student.getFirstName());
+        listOfStudent.add(student.getFirstName());
         fillAppLastName(student.getLastName());
+        listOfStudent.add(student.getLastName());
         fillAppEmail(student.getEMail());
+        listOfStudent.add(student.getEMail());
         fillAppAge(student.getAge());
+        listOfStudent.add(student.getAge());
         fillAppSalary(student.getSalary());
+        listOfStudent.add(student.getSalary());
         fillAppDepartmen(student.getDepartment());
+        listOfStudent.add(student.getDepartment());
         clickSubmit();
         return this;
+
     }
+    List<String> listOfStudent= new ArrayList<>();
+
+
+    public WebTablesPage getInfoFromActualList(){
+       for (int i=0; i<actualResult.size(); i++){
+           if(i==0) {
+               Assert.assertTrue(actualResult.get(i).getText().contains(listOfStudent.get(i)));
+           }
+       }
+        System.out.println(listOfStudent.toString());
+return this;
+    }
+
 
 //    public WebTablesPage testForm() throws InterruptedExcerption {
 //        Thread.sleep(7000);
