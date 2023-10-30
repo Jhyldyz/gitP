@@ -8,5 +8,6 @@ public class AlertTest extends BaseTest{
                 .clickTimerAlertBtn()
                 .clickConfirmButton()
                 .testpromtBtn();
+        
     }
 }
